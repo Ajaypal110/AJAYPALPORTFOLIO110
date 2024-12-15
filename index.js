@@ -7,7 +7,7 @@ const contactForm = document.getElementById('contact-form'),
 const sendEmail = (e) =>{
     e.preventDefault();
 
-    emailjs.sendForm('Ajay@110125','template_erekb7i','#contact-form','g0DEV_HuCzdwHU_9z')
+    emailjs.sendForm('Ajay@110125','template_erekb7i','#contact-form','0xjutl8DL6lunqORh')
     .then(() =>{
         contactMessage.textContent = 'Message Sent Successfully ✅'
 
