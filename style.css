@@ -119,10 +119,7 @@ img {
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
-.container {
-  max-width: 1168px;
-  margin-inline: 1.5rem;
-}
+
 
 .grid {
   display: grid;
@@ -144,6 +141,44 @@ img {
 }
 
 /*=============== NAV ===============*/
+.nav1{
+  width: 320px;
+  height: 5rem;
+  background-color: var(--first-color);
+  align-items: center;
+  justify-content: center;
+  margin-left: 1.4rem;
+  border-radius: 1.5rem;
+  color: var(--first-color);
+  padding-top: 1rem;
+  margin-top: 1.5rem;
+  display: flex;
+}
+.logo__img{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+
+.logo1__img{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-left: -3.2rem;
+  margin-bottom: 0.rem;
+}
+
+.nav1__name{
+  align-items: center;
+  justify-content: center;
+  /* display: flex; */
+  font-size: 0.8rem;
+  color: var(--white-color);
+  font: var(--font-regular) var(--biggest-font-size) var(--second-font);
+  margin-bottom: 1rem;
+}
 
 .nav {
   position: fixed;
@@ -247,8 +282,8 @@ img {
 }
 
 .info__circle {
-  height: 2rem;
-  width: 2rem;
+  height: 3rem;
+  width: 3rem;
   background-color: var(--first-color);
   border-radius: 50%;
 
@@ -548,13 +583,13 @@ img {
 /*=============== EXPERIENCE ===============*/
 
 .experience__container {
-  row-gap: 2rem;
+  row-gap: 8rem;
 }
 
 .experience__card {
   display: grid;
   row-gap: 1rem;
-  height: 11rem;
+  height: 18rem;
 }
 
 .experience__company {
@@ -572,7 +607,7 @@ img {
 
 .experience__professtion {
   font-size: var(--h3-font-size);
-  margin-bottom: .5rem;
+  margin-bottom: 1rem;
 }
 
 .experience__date {
@@ -700,7 +735,7 @@ img {
 
 
 /*=============== SCROLL BAR ===============*/
-
+/* 
 ::-webkit-scrollbar{
   width: .6rem;
   background-color: hsl(0, 0%, 20%);
@@ -712,11 +747,11 @@ img {
 }
 ::-webkit-scrollbar-thumb:hover{
   background-color: hsl(0, 0%, 40%);
-}
+} */
 
 
 /*=============== SCROLL UP ===============*/
-
+/* 
 .scrollup{
   position: fixed;
   right: 1rem;
@@ -735,14 +770,14 @@ img {
 
 .scrollup:hover{
   transform: translateY(-.5rem);
-}
+} */
 
 
 /* Show Scroll Up */
-
+/* 
 .show-scroll{
   bottom: 8rem;
-}
+} */
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
@@ -812,142 +847,174 @@ img {
 
 /* For large devices */
 
-
 @media screen and (min-width : 1200px) {
   .container{
-    margin-inline: auto;
-
+    display: flex;
+    gap: 1rem;
   }
-  .section{
-    padding-block: 3rem 4rem;
-  }
-  .section__title{
-    font-size: var(--h1-font-size);
-    margin-bottom: 4rem;
-  }
-  .home__container{
-    grid-template-columns: 280px 560px 280px;
-    align-items: stretch;
+  .nav1{
+    width: 1500px;
+    margin-left: 1rem;
   }
   .perfil{
-    grid-column: 2/3;
-    grid-row: 1/3;
-    padding: 2rem;
-  }
-  .perfil__img{
-    width: 450px;
+    height: 580px;
+    width: 1000px;
+    margin-left: 1rem;
+    /* margin-left: 30rem; */
   }
   .perfil__data{
-    width: 370px;
-    padding: 1.5rem;
-    border-radius: 2rem;
+    height: 310px;
   }
   .info{
-    grid-column: 1/2;
-    grid-row: 1/2;
+    height: 580px;
+    width: 800px;
+    /* margin-left: -36rem; */
   }
   .info__name{
-    font-size: var(--h2-font-size);
+    font-size: 40px;
+    padding-left: 1rem;
+  }
+  .info__description{
+    font-size: 20px;
+  }
+  .info__image{
+    height: 270px;
+  }
+  .info__img{
+    height: 290px;
+    width: 280px;
   }
   .about{
-    grid-column: 3/4;
-    grid-row: 1/3;
-    align-items: center;
+    height: 580px;
+    width: 800px;
+    /* margin-left: 36rem; */
+  }
+  .about__description{
+    font-size: 15px;
   }
   .about__image{
-    height: 210px;
+    height: 195px;
+    width: 350px;
   }
   .about__img{
-    transform: translateY(-1rem);
+    height: 250px;
+    width: 180px;
+    padding-top: 2rem;
+  }
+  .about__name{
+    font-size: 20px;
+  }
+  .about__social{
+    height: 50px;
+  }
+  .about__link{
+    height: 50px;
+    width: 40px;
+    gap: 2rem;
+    font-size: 1.8rem;
+  }
+  .about__note{
+    font-size: 14px;
   }
   .skills{
-    grid-column: 1/2;
-    grid-row: 2/3;
+    height: 580px;
+    width: 300px;
+    margin-right: 1rem;
   }
-  .skills__title{
-    font-size: var(--h3-font-size);
+  .skills__items{
+    display: inline;
   }
-  .projects__container{
-    grid-template-columns: repeat(3, 368px);
-    gap: 2rem;
+  .skills__description{
+    font-size: 18px;
   }
-  .projects__card{
-    padding-bottom: 2rem;
-  }
-
-  .services__container{
-    grid-template-columns: repeat(3, 368px);
-    gap: 2rem;
-  }
-  .services__card{
-    padding-block: 6rem 5rem;
-  }
-
-  .services__icon i {
-    font-size: 3.5rem;
-
-  }
-  .services__circle{
-    width: 4rem;
-    height: 4rem;
-    right: -1.5rem;
-    top: -1.5rem;
-  }
-  .experience__container{
-    row-gap: 4rem;
-
-  }
-  .experience__card{
-    grid-template-columns: 350px 510px;
-    column-gap: 8rem;
-
-  }
-  .experience__company{
-    font-size: var(--h1-font-size);
-  }
-  .experience__data{
-    padding: 2rem;
-    border-radius: 2rem;
-  }
-  .contact__container{
-    grid-template-columns: 620px;
-
-  }
-  .contact__group{
-    grid-template-columns: repeat(2,1fr);
-  }
-  .contact__area{
-    height: 15rem;
-  }
-  .contact__button{
-    width: max-content;
-    justify-self: center;
-  }
-  .footer{
-    padding-top: 3rem;
-
-  }
-  .footer__links{
-    column-gap: 3rem;
-  }
-  .footer__copy{
-    margin-top: 7rem;
-  }
-}
-
-@media screen and (min-width : 1500px) {
-  .nav{
-    width: max-content;
-    height: max-content;
-    padding: 1rem 2rem;
-    left: initial;
-    right: 3rem;
-    top: 0;
-    bottom: 0;
-    margin-block: auto;
+  .skill__tittle{
+    font-size: 30px;
   }
   .nav__list{
-    flex-direction: column;
-    row-gap: 1.25rem;
+    width: 500px;
+  }
+  .projects__card{
+    width: 400px;
+    height: 750px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .projects__name{
+    font-size: 25px;
+  }
+  .section__title{
+    font-size: 40px;
+  }
+  .projects__button{
+    font-size: 20px;
+  }
+  .services__container{
+    display: inline;
+  }
+  .services__card{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    gap: 2rem;
+  }
+  .services__name{
+    font-size: 30px;
+  }
+  .services__description{
+    font-size: 18px;
+  }
+  .services__icon{
+    font-size: 20px;
+    padding-top: 1rem;
+  }
+  .experience__container{
+    display: inline;
+  }
+  .experience__company{
+    font-size: 45px;
+    margin-left: 4rem;
+  }
+  .experience__data{
+    width: 1100px;
+    margin-left: 15rem;
+    height: 200px;
+  }
+  .experience__professtion{
+     font-size: 20px;
+  }
+  .experience__description{
+    font-size: 18px;
+  }
+  .experience__date{
+    font-size: 1.2rem;
+  }
+  .contact__input{
+    width: 900px;
+  }
+  .contact__group{
+    height: 150px;
+  }
+  .contact__area{
+    height: 230px;
+  }
+   .footer__logo{
+    font-size: 80px;
+  }
+  .footer__container{
+   display: inline;
+  }
+  .footer__content{
+    align-items: center;
+    justify-content: center;
+    margin-right: 12rem;
+  }
+  .footer__links{
+    font-size: 20px;
+  }
+  .footer__social{
+    font-size: 30px;
+  }
+  .footer__copy{
+    font-size: 18px;
+    margin-bottom: 8rem;
   }
 }
