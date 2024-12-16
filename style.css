@@ -782,12 +782,19 @@ img {
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
   .container{
     margin-inline: 1rem;
   }
   .nav{
     padding: 1rem;
+  }
+ 
+  .perfil,
+  .info,
+  .about,
+  .skills{
+    margin-left: 0.5rem;
   }
 }
 
