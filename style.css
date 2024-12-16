@@ -750,7 +750,7 @@ img {
 } */
 
 
-/*=============== SCROLL UP ===============*/
+/* =============== SCROLL UP ===============*/ 
 /* 
 .scrollup{
   position: fixed;
@@ -774,13 +774,14 @@ img {
 
 
 /* Show Scroll Up */
-/* 
-.show-scroll{
+ 
+/* .show-scroll{
   bottom: 8rem;
 } */
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+
 @media screen and (max-width: 320px) {
   .container{
     margin-inline: 1rem;
