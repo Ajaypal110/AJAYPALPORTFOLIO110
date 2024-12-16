@@ -941,6 +941,9 @@ img {
   .nav__list{
     width: 500px;
   }
+  .visit{
+    margin-bottom: 10rem;
+  }
   .projects__card{
     width: 400px;
     height: 750px;
@@ -958,11 +961,14 @@ img {
   }
   .services__container{
     display: inline;
+    
   }
   .services__card{
-    margin-left: 1rem;
+    margin-left: 16rem;
     margin-right: 1rem;
     gap: 2rem;
+    width: 1000px;
+    height: max-content;
   }
   .services__name{
     font-size: 30px;
@@ -972,7 +978,6 @@ img {
   }
   .services__icon{
     font-size: 20px;
-    padding-top: 1rem;
   }
   .experience__container{
     display: inline;
